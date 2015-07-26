@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Chirag Agrawal</title>
+        <title>Chirag Agrawal - About</title>
 
         <script src="lib/js/jquery-1.10.2.min.js"></script>
         <script src="lib/js/bootstrap.min.js"></script>
@@ -16,56 +16,105 @@
             <text id="nameHeading">Chirag Agrawal</text>
         </div>
 
-        <div id="topics" class="container">
-            <div id="accordion" class="panel-group">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-                                <text class="topicHeadings">Computer Graphics</text>
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapse1" class="panel-collapse collapse in">
-                        <div class="panel-body">
-                            <text class="topicText">CG Stuff</text>
+        <div id="main" class="container">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <ul class="nav nav-pills nav-justified">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active">
+                        <a href="#" onclick="this.blur();">About Me</a>
+                    </li>
+                    <li data-target="#myCarousel" data-slide-to="1">
+                        <a href="#" onclick="this.blur();">Experience</a>
+                    </li>
+                    <li data-target="#myCarousel" data-slide-to="2">
+                        <a href="#" onclick="this.blur();">Projects</a>
+                    </li>
+                </ul>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div id="aboutMe">
+                            <img class="logo" src="lib/img/bits.png">
+                            <br>
+                            <img class="logo" src="lib/img/paristech.jpg">
                         </div>
                     </div>
-                </div>
+                    <!-- End Item -->
 
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
-                                <text class="topicHeadings">Computer Vision</text>
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapse2" class="panel-collapse collapse in">
-                        <div class="panel-body">
-                            <text class="topicText">CV Stuff</text>
+                    <div class="item">
+                        <div id="experience">
+                            <img class="logo" src="lib/img/amazon.gif">
+                            <br>
+                            <img class="logo" src="lib/img/dreamworks.png">
+                            <img class="logo" src="lib/img/technicolor.png">
+                            <br>
+                            <img class="logo" src="lib/img/gsoc.png">
+                            <img class="logo" src="lib/img/perl.png">
+                            <img class="logo" src="lib/img/parrot.png">
+                            <br>
+                            <img class="logo" src="lib/img/tata.png">
                         </div>
                     </div>
-                </div>
+                    <!-- End Item -->
 
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
-                                <text class="topicHeadings">Interaction Design</text>
-                            </a>
-                        </h4>
-                    </div>
-                    <div id="collapse3" class="panel-collapse collapse in">
-                        <div class="panel-body">
-                            <text class="topicText">HCI Stuff</text>
+                    <div class="item">
+                        <div id="projects">
+                            <div id="topics">
+                                <div id="accordion" class="panel-group">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                                                    <text class="topicHeadings">Computer Graphics</text>
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse1" class="panel-collapse collapse in">
+                                            <div class="panel-body">
+                                                <text class="topicText">CG Stuff</text>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                                                    <text class="topicHeadings">Computer Vision</text>
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse2" class="panel-collapse collapse in">
+                                            <div class="panel-body">
+                                                <text class="topicText">CV Stuff</text>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            <h4 class="panel-title">
+                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                                                    <text class="topicHeadings">Interaction Design</text>
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapse3" class="panel-collapse collapse in">
+                                            <div class="panel-body">
+                                                <text class="topicText">HCI Stuff</text>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <!-- End Item -->
                 </div>
-
+                <!-- End Carousel Inner -->
             </div>
+            <!-- End Carousel -->
         </div>
-
         <script type="text/javascript">var zyro = new Zyro();</script>
     </body>
 </html>

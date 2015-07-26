@@ -6,7 +6,36 @@ body {
     background-image: url("../../lib/img/background.gif"),
                       url("../../lib/img/background2.jpg");
     background-repeat: no-repeat;
-    background-position: left top, right bottom;
+    background-position: left top, right top;
+}
+
+#main {
+    margin-top: 5%;
+}
+
+.logo {
+    width: 200px;
+}
+
+#aboutMe {
+    margin: 2%;
+    border-style: dashed;
+    border-color: grey;
+    padding: 2%;
+}
+
+#experience {
+    margin: 2%;
+    border-style: dashed;
+    border-color: grey;
+    padding: 2%;
+}
+
+#projects {
+    margin: 2%;
+    border-style: dashed;
+    border-color: grey;
+    padding: 2%;
 }
 
 #topHeading {
@@ -22,3 +51,12 @@ body {
     font-family: Calibri !important;
     font-style: italic;
 }
+
+#myCarousel .nav
+{
+    background: #eee;
+}
+
+.nav-pills>li[data-slide-to="0"].active a { background-color: #2980b9 !important; }
+.nav-pills>li[data-slide-to="1"].active a { background-color: #16a085 !important; }
+.nav-pills>li[data-slide-to="2"].active a { background-color: #e67e22 !important; }
