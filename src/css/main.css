@@ -1,0 +1,17 @@
+#topHeading {
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+#nameHeading {
+    text-shadow:-1px -1px 0 #000,
+                1px -1px 0 #000,
+                -1px 1px 0 #000,
+                1px 1px 0 #000;
+    color: #337ab7;
+    font-weight: bold;
+    font-size: 5em;
+    font-family: Calibri !important;
+    font-style: italic;
+}
