@@ -1,3 +1,14 @@
+html {
+    height: 100%
+}
+
+body {
+    background-image: url("../../lib/img/background.gif"),
+                      url("../../lib/img/background2.jpg");
+    background-repeat: no-repeat;
+    background-position: left top, right bottom;
+}
+
 #topHeading {
     width: 100%;
     position: relative;
@@ -5,10 +16,6 @@
 }
 
 #nameHeading {
-    text-shadow:-1px -1px 0 #000,
-                1px -1px 0 #000,
-                -1px 1px 0 #000,
-                1px 1px 0 #000;
     color: #337ab7;
     font-weight: bold;
     font-size: 5em;
