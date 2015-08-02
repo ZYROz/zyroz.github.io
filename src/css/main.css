@@ -9,12 +9,13 @@ body {
     background-position: left top, right top;
 }
 
-#main {
-    margin-top: 5%;
-}
-
 .logo {
     width: 200px;
+}
+
+.schoolLogo {
+    width: 80px;
+    margin-right: 1%;
 }
 
 #aboutMe {
@@ -22,6 +23,17 @@ body {
     border-style: dashed;
     border-color: grey;
     padding: 2%;
+    height: 100%;
+    overflow: auto;
+}
+
+#aboutMeLogos {
+    text-align: center;
+}
+
+#aboutMeText {
+    text-align: justify;
+    padding: 4%;
 }
 
 #experience {
@@ -31,11 +43,19 @@ body {
     padding: 2%;
 }
 
+#main {
+    margin-top: 5%;
+}
+
 #projects {
     margin: 2%;
     border-style: dashed;
     border-color: grey;
     padding: 2%;
+}
+
+#schools {
+    margin-top: 5%;
 }
 
 #topHeading {
