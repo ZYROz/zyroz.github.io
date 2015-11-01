@@ -11,6 +11,7 @@ body {
 
 .logo {
     width: 150px;
+    margin-bottom: 2%;
 }
 
 .schoolLogo {
@@ -43,12 +44,35 @@ body {
     padding: 2%;
 }
 
+#jobTitle {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#leftColumn-experience {
+    width: 70%;
+}
+
+#rightColumn-experience {
+    width: 30%;
+    text-align: right;
+    font-style: italic;
+}
+
 #main {
     margin-top: 5%;
 }
 
 #myPic {
     width: 200px;
+}
+
+#nameHeading {
+    color: #337ab7;
+    font-weight: bold;
+    font-size: 5em;
+    font-family: Calibri !important;
+    font-style: italic;
 }
 
 #projects {
@@ -68,16 +92,7 @@ body {
     text-align: center;
 }
 
-#nameHeading {
-    color: #337ab7;
-    font-weight: bold;
-    font-size: 5em;
-    font-family: Calibri !important;
-    font-style: italic;
-}
-
-#myCarousel .nav
-{
+#myCarousel .nav {
     background: #eee;
 }
 
