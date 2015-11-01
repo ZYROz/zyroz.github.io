@@ -10,7 +10,7 @@ body {
 }
 
 .logo {
-    width: 200px;
+    width: 150px;
 }
 
 .schoolLogo {
@@ -45,6 +45,10 @@ body {
 
 #main {
     margin-top: 5%;
+}
+
+#myPic {
+    width: 200px;
 }
 
 #projects {
