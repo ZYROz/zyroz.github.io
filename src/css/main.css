@@ -37,11 +37,19 @@ body {
     padding: 4%;
 }
 
+#contactMe {
+    font-style: italic;
+}
+
 #experience {
     margin: 2%;
     border-style: dashed;
     border-color: grey;
     padding: 2%;
+}
+
+#jobDescription {
+    text-align: justify;
 }
 
 #jobTitle {
@@ -60,7 +68,7 @@ body {
 }
 
 #main {
-    margin-top: 5%;
+    margin-top: 2%;
 }
 
 #myPic {
