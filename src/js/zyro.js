@@ -51,4 +51,8 @@ Zyro.prototype.collectGoogleAnalytics = function() {
 
     ga('create', 'UA-69564612-1', 'auto');
     ga('send', 'pageview');
+    $('.trackerClass').click(function() {
+        var selId = $(this).attr('id');
+        _gaq.push(['_trackEvent', 'Interactions', 'Click', selId]);
+    });
 }
