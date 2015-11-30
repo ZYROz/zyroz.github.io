@@ -49,11 +49,10 @@ Zyro.prototype.collectGoogleAnalytics = function() {
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    var _gaq = _gaq || [];
     ga('create', 'UA-69564612-1', 'auto');
     ga('send', 'pageview');
     $('.trackerClass').click(function() {
         var selId = $(this).attr('id');
-        _gaq.push(['_trackEvent', 'Interactions', 'Click', selId]);
+        ga('send', 'event', 'Interactions', 'Click', selId);
     });
 }
