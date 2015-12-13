@@ -55,12 +55,21 @@ Zyro.prototype.collectGoogleAnalytics = function() {
     ga('create', 'UA-69564612-1', 'auto');
     ga('send', 'pageview');
 
+    var visitSourceReftag = this.getUrlParameter("r");
+
+    //Capture clicks on site tabs
     $('.trackerClass').click(function() {
         var selId = $(this).attr('id');
-        ga('send', 'event', 'Interactions', 'Click', selId);
+        //Capture click data along with visit source
+        if (visitSourceReftag) {
+            ga('send', 'event', 'Interactions', 'Click', visitSourceReftag + "-" + selId);
+        }
+        else {
+            ga('send', 'event', 'Interactions', 'Click', selId);
+        }
     });
 
-    var visitSourceReftag = this.getUrlParameter("r");
+    //Capture reftag for visit's source
     if (visitSourceReftag) {
         ga('send', 'event', 'Reftags', 'visitSource', visitSourceReftag);
     }
