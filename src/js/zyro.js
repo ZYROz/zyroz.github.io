@@ -18,7 +18,6 @@ Zyro.prototype.initiate = function() {
 * @function Zyro.prototype.setupCarousel
 * @description Start executing functions
 */
-
 Zyro.prototype.setupCarousel = function() {
     $('#myCarousel').carousel({
         interval: false
@@ -43,6 +42,10 @@ Zyro.prototype.setupCarousel = function() {
     });
 };
 
+/**
+* @function Zyro.prototype.collectGoogleAnalytics
+* @description Collect and send data to GoogleAnalytics
+*/
 Zyro.prototype.collectGoogleAnalytics = function() {
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -51,8 +54,32 @@ Zyro.prototype.collectGoogleAnalytics = function() {
 
     ga('create', 'UA-69564612-1', 'auto');
     ga('send', 'pageview');
+
     $('.trackerClass').click(function() {
         var selId = $(this).attr('id');
         ga('send', 'event', 'Interactions', 'Click', selId);
     });
+
+    var visitSourceReftag = this.getUrlParameter("r");
+    if (visitSourceReftag) {
+        ga('send', 'event', 'Reftags', 'visitSource', visitSourceReftag);
+    }
+}
+
+/**
+* @function Zyro.prototype.getUrlParameter
+* @description Extract URL query parameters
+*/
+Zyro.prototype.getUrlParameter = function(urlParam) {
+    var pageUrl = decodeURIComponent(window.location.search.substring(1));
+    var urlParamList = pageUrl.split('&');
+
+    for (var i = 0; i < urlParamList.length; i++) {
+        paramValue = urlParamList[i].split('=');
+
+        if (paramValue[0] === urlParam) {
+            return(paramValue[1] === undefined ? false : paramValue[1]);
+        }
+    }
+    return false;
 }
